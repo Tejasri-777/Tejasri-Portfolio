@@ -1,0 +1,570 @@
+/* GENERAL STYLING */
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
+/* Responsive */
+/* ===========================
+    RESPONSIVE DESIGN
+   =========================== */
+
+/* Tablets and small laptops */
+@media (max-width: 992px) {
+  nav ul {
+    gap: 10px;
+  }
+  .Home-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .right-section img {
+    margin-left: 0;
+    width: 80%;
+  }
+}
+
+/* Large Phones & Portrait Tablets */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .About-section {
+    flex-direction: column;
+  }
+  .Qualif-section, .Skill-section, .Experience-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .left-section {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .About-text {
+    font-size: 16px;
+    padding: 15px;
+  }
+  .footer-icons img {
+    width: 18px;
+  }
+}
+
+
+
+@media (max-width: 850px) {
+  .timeline {
+    flex-direction: column;
+    border-top: none;
+  }
+  .timeline-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .timeline-icon {
+    position: relative;
+    top: 0;
+  }
+  .timeline-item::before {
+    display: none;
+  }
+}
+
+
+/* HEADER STYLING */
+nav {
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(32, 4, 60);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+.left h4 {
+    margin-left: 15px;
+}
+
+.left img {
+    border-radius: 50%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(182, 98, 222);
+    font-size: 16px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+#element {
+    color: blueviolet;
+    font-weight: 600;
+}
+
+
+/* MAIN SECTION */
+
+
+
+/* ABOUT SECTION */
+.Home-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 30px 70px;
+}
+
+.first-section>div {
+    width: 30%;
+}
+
+.left-section {
+    font-size: 2rem;
+    width: 40%;
+}
+
+.right-section img {
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 180px;
+}
+
+.name {
+    color: blueviolet;
+    font-weight: 600;
+}
+
+.hr-style {
+    border: 0;
+    height: 1.2px;
+    background: rgb(83, 52, 94);
+    margin: 40px 80px;
+}
+
+.buttons {
+    /* display: flex;
+    justify-content: space-evenly; */
+    padding: 23px;
+
+}
+
+.btn {
+    padding: 12px;
+    background-color: rgb(32, 4, 60);
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*ABOUT SECTION */
+.About-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    margin: 70px 40px;
+}
+
+.About-profile {
+    /* border-radius:50%; */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid;
+}
+
+.title {
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.About-text {
+    width: 70%;
+    height: 60%;
+    background-color: rgb(32, 4, 60);
+    font-size: 25px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: justify;
+    color: white;
+}
+
+
+/* QUALIFICATION SECTION */
+.Qualif-section,.Skill-section,
+.Experience-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    width:95%;
+}
+.Qualif-section div{
+    height:300px;
+}
+.qualif-style {
+    width: 300px;
+    height: 60%;
+    background-color: rgb(32, 4, 60);
+    color: white;
+    font-size: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+/*SKILLS SECTION */
+.Skill-section div{
+   width:180px;
+   height:220px;
+   background:rgb(59, 27, 83);
+   font-size:100%;padding:50px;
+   border-radius:20px;text-align:center;
+   margin:10px;text-align:justify;
+   box-shadow: 2px 2px 2px rgba(21, 7, 40, 0.3), inset 2px 2px 2px white;
+}
+.list-style{
+    text-align:center;
+    list-style:none;
+    margin-top:30px;
+    color:rgb(165, 218, 252);
+    font-weight:bold;
+}
+
+
+/*EXPERIENCE SECTION */
+/* Timeline Container */
+/* Timeline container line */
+.timeline {
+  position: relative;
+  width: 100%;
+  margin: 40px auto;
+  /* border-top: 2px solid rgba(255, 255, 255, 0.25); */
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 60px;
+}
+
+/* Each item block */
+.timeline-item {
+  position: relative;
+  width: 30%;
+  text-align: center;
+  color: #e2e2e2;
+}
+
+/* Icon on the center line */
+.timeline-icon {
+  position: absolute;
+  top: -32px;          /* places icon on the line */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c692eb;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Vertical line below icon */
+.timeline-item::before {
+  content: "";
+  width: 2px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+/* Titles */
+.timeline-item h3 {
+  margin-top: 70px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Paragraph */
+.timeline-item p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+
+/*CONTACT INFPRMATION SECTION */
+.Contact-section div{
+     width:50%px;
+     height:60%;
+     /* background:rgb(28, 2, 67); */
+     background-color:black;
+     color:white;
+     font-size:100%;
+     padding:20px;
+     border-radius:20px;
+     text-align:center;
+     margin:10px;
+}
+.mini-footer {
+  /* background: #111; */
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.mini-footer .icon img {
+  width: 30px;
+  filter: invert(100%);
+  transition: 0.3s ease;
+}
+
+.mini-footer .icon img:hover {
+  transform: scale(1.2);
+  filter: invert(70%) sepia(80%) saturate(200%) hue-rotate(180deg);
+}
+.footer-icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    width:300px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+.Qualif-section,
+.Skill-section{
+    flex: calc(33.33% - 20px); 
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    /* border: 1px solid #ddd; */
+}
+
+/* Hover effect for sections */
+.Qualif-section:hover,
+.Skill-section:hover{
+    border-color: #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*  INTERESTS SECTION */
+.Interests-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-top:50px;
+    margin-bottom:50px;
+    /* width:40px; */
+}
+.interests-style{
+    width: 180px;
+    height: 180px;
+    /* background-color: rgb(59, 27, 83); */
+    color: white;
+    font-size: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: rgb(32, 4, 60);
+    height: auto;
+}
+.footer-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    letter-spacing: 1px;
+}
+
+
+.footer-rights {
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+
+.blink{
+    transition: 1s;
+}
+.blink:hover{
+    transform: scale(1.1);
+
+}
+.three{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 600px;
+}
+
+
+
+/* =========================
+   Buttons - HTML / CSS
+   ========================= */
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start; /* change to center if you want centered buttons */
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+/* Base button look (applies to both) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: transform 0.14s ease, box-shadow 0.14s ease, background-color 0.12s;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+  color: white;
+}
+
+/* Primary filled button */
+.btn-primary {
+  background: linear-gradient(180deg, rgb(110, 50, 200), rgb(73, 21, 129));
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Outline / secondary button */
+.btn-outline {
+  background: transparent;
+  border: 1.6px solid rgba(255,255,255,0.14);
+  color: #eaeaea;
+}
+
+/* Button icon (font-awesome) */
+.btn i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* smaller text span so we can hide on tiny screens if needed */
+.btn-text {
+  display: inline-block;
+}
+
+/* Hover & focus */
+.btn:hover,
+.btn:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  outline: none;
+}
+
+/* Focus-visible for accessibility */
+.btn:focus-visible {
+  outline: 3px solid rgba(182,98,222,0.35);
+  outline-offset: 2px;
+}
+
+/* Responsive tweaks */
+
+/* Medium screens: keep spacing slightly smaller */
+@media (max-width: 992px) {
+  .buttons {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+}
+
+/* Small screens: stack the buttons vertically and shorten text */
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  /* Optional: hide text to only show icon on very small screens.
+     Uncomment the next line if you'd prefer icon-only buttons on tiny phones. */
+  /* .btn-text { display: none; } */
+}
